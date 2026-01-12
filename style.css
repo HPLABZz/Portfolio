@@ -704,13 +704,9 @@ p{
     z-index: 5;
 }
 
-/* ===============================
-   ANDROID / MOBILE UI FIXES
-   =============================== */
-
+/* UI Fixing For Android */
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   .navbar {
     height: auto;
     padding: 15px 20px;
@@ -730,7 +726,6 @@ p{
     justify-content: center;
   }
 
-  /* HERO SECTION */
   #hero {
     padding-top: 140px;
   }
@@ -769,7 +764,6 @@ p{
     justify-content: center;
   }
 
-  /* PROFILE IMAGE */
   .profile-container {
     justify-content: center;
   }
@@ -779,7 +773,6 @@ p{
     height: 260px;
   }
 
-  /* PROJECTS */
   .section-title {
     font-size: 2.2rem;
     margin-top: 80px;
@@ -794,7 +787,6 @@ p{
     padding: 25px;
   }
 
-  /* ABOUT SECTION */
   .about-section {
     padding: 60px 6%;
   }
@@ -814,7 +806,6 @@ p{
     height: 220px;
   }
 
-  /* CONTACT SECTION */
   .contact-section {
     padding: 60px 6%;
   }
@@ -828,13 +819,11 @@ p{
     margin-bottom: 40px;
   }
 
-  /* FOOTER */
   .copyright {
     font-size: 0.95rem;
   }
 }
 
-/* EXTRA SMALL ANDROID DEVICES */
 @media (max-width: 480px) {
 
   .hero-text h1 {
@@ -852,5 +841,56 @@ p{
   .btn {
     padding: 14px 20px;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+   .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 16px;
+    height: auto;
+    gap: 8px;
+  }
+
+  .navbar::before {
+    content: "";
+  }
+    .logo {
+    font-size: 2.2rem;
+    margin-left: 52px;
+    align-self: flex-start;
+  }
+
+  .profile-container {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    z-index: 1200;
+  }
+
+  .profile-wrapper {
+    width: 58px;
+    height: 58px;
+    animation: none;
+  }
+
+  .profile-img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--neon-Darkblue);
+    animation: none;
+  }
+
+  .glow-effect,
+  .particle {
+    display: none;
+  }
+
+  #hero .profile-container {
+    pointer-events: none;
+  }
+
+  .navbar {
+    padding-left: 70px;
   }
 }
