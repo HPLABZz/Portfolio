@@ -851,6 +851,7 @@ p{
     padding: 12px 16px;
     height: auto;
     gap: 8px;
+    
   }
 
   .navbar::before {
@@ -863,15 +864,15 @@ p{
   }
 
   .profile-container {
-    position: absolute;
-    top: 12px;
-    left: 16px;
+    position: fixed;
+    top: 14px;
+    left: 18px;
     z-index: 1200;
   }
 
   .profile-wrapper {
-    width: 58px;
-    height: 58px;
+    width: 72px;
+    height: 72px;
     animation: none;
   }
 
