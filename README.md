@@ -1,4 +1,4 @@
-﻿# Portfoli
+﻿# Portfolio
 
 🚀 Portfolio Website
 
@@ -34,3 +34,4 @@ Form Handling: EmailJS
 📌 Purpose
 
 This portfolio serves as a central hub to present my full-stack development and machine learning projects, demonstrate UI/UX capabilities, and provide an easy way to connect for collaborations or opportunities.
+
