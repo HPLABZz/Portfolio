@@ -66,3 +66,68 @@
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  if (window.innerWidth <= 768) {
+    const profile = document.querySelector(".profile-container");
+    const navbar = document.querySelector(".navbar");
+
+    if (profile && navbar) {
+      navbar.prepend(profile);
+    }
+  }
+
+  const toggle = document.querySelector(".menu-toggle");
+  const actions = document.querySelector(".nav-actions");
+
+  if (toggle && actions) {
+    toggle.addEventListener("click", () => {
+      actions.classList.toggle("active");
+    });
+  }
+
+});
+
+
+/* =====================================================
+   MOBILE NAVBAR INTERACTIONS (SAFE & ISOLATED)
+   ===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  if (window.innerWidth > 768) return; // desktop safety
+
+  const navbar = document.querySelector(".navbar");
+  const toggle = document.querySelector(".menu-toggle");
+  const actions = document.querySelector(".nav-actions");
+  const links = document.querySelectorAll(".mobile-menu a");
+
+  /* TOGGLE MENU */
+  toggle?.addEventListener("click", () => {
+    actions.classList.toggle("active");
+  });
+
+  /* AUTO CLOSE ON LINK CLICK */
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      actions.classList.remove("active");
+    });
+  });
+
+  /* HIDE NAVBAR ON SCROLL */
+  let lastScroll = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const current = window.scrollY;
+
+    if (current > lastScroll && current > 80) {
+      navbar.classList.add("nav-hidden");
+    } else {
+      navbar.classList.remove("nav-hidden");
+    }
+
+    lastScroll = current;
+  });
+
+});
