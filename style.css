@@ -829,41 +829,34 @@ p{
   #hero .profile-container {
     display: none;
   }
-
-
-
-
-
-
   .text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32;
     font-weight: 400;
     color: transparent;
-}
-
-  .hero-text h1{
-    font-size: 28px;
-    line-height: 1.1;
-}
-.hero-text h2{
-    font-size: 1.2rem;
-    margin-bottom: 35px;
-}
-.section-title {
-    font-size: 1.9rem;
-    text-align: center;
-    margin-bottom: 40px;
-    background: linear-gradient(90deg,#ffffff, var(--neon-Darkblue), var(--neon-blue));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-  
-
-}
-
-@media (min-width: 769px) {
-  .nav-actions,
-  .mobile-menu {
-    display: none;
   }
-}
+
+    .hero-text h1{
+      font-size: 28px;
+      line-height: 1.1;
+  }
+  .hero-text h2{
+      font-size: 1.2rem;
+      margin-bottom: 35px;
+  }
+  .section-title {
+      font-size: 1.9rem;
+      text-align: center;
+      margin-bottom: 40px;
+      background: linear-gradient(90deg,#ffffff, var(--neon-Darkblue), var(--neon-blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+  }
+  }
+  @media (min-width: 769px) {
+    .nav-actions,
+    .mobile-menu {
+      display: none;
+    }
+  }
