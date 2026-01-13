@@ -711,8 +711,7 @@ p{
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    height: auto;
-    padding: auto;
+    padding: 14px 16px;
     transition: transform 0.35s ease, backdrop-filter 0.35s ease;
   }
 
