@@ -752,6 +752,19 @@ footer, p{
   }
 }
 
+@media (max-width: 766px) {
+  .logo{
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-decoration: none;
+    letter-spacing: 6px;
+    margin-left: 2%;
+  }
+}
+
+
 @media (min-width: 769px) {
   .nav-actions,
   .mobile-menu {
