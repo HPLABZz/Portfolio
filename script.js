@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       particle.classList.add("particle");
 
       const size = Math.random() * 10 + 1;
-      const posX = Math.random() * 130 - 20;
-      const posY = Math.random() * 130 - 20;
+      const posX = Math.random() * 170 - 35;
+      const posY = Math.random() * 170 - 35;
       const duration = Math.random() * 8 + 4;
       const delay = Math.random() * 5;
 
