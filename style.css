@@ -746,6 +746,9 @@ footer, p{
     font-size: 1.9rem;
     text-align: center;
   }
+  footer, p{
+    font-size: medium;
+  }
 }
 
 @media (min-width: 769px) {
